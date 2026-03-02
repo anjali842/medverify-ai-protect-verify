@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ShieldCheck, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
+import logo from "@/assets/logo.jpg";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -19,9 +20,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-card/80 backdrop-blur-lg border-b">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
-            <ShieldCheck className="w-5 h-5 text-primary-foreground" />
-          </div>
+          <img src={logo} alt="MedVerify AI Logo" className="h-10 w-10 rounded-lg object-contain" />
           <div className="leading-tight">
             <span className="font-display font-bold text-lg text-foreground">MedVerify</span>
             <span className="font-display font-bold text-lg text-primary"> AI</span>
