@@ -1,5 +1,6 @@
-import { ShieldCheck, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.jpg";
 
 const Footer = () => (
   <footer className="bg-foreground text-background/80">
@@ -7,9 +8,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <div className="flex items-center gap-2 mb-3">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <ShieldCheck className="w-4 h-4 text-primary-foreground" />
-            </div>
+            <img src={logo} alt="MedVerify AI Logo" className="h-8 w-8 rounded-lg object-contain" />
             <span className="font-display font-bold text-lg text-background">MedVerify AI</span>
           </div>
           <p className="text-sm text-background/60 leading-relaxed">
