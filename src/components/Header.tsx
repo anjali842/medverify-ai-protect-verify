@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ShieldCheck, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -42,6 +43,7 @@ const Header = () => {
               {item.label}
             </Link>
           ))}
+          <ThemeToggle />
         </nav>
 
         {/* Mobile toggle */}
