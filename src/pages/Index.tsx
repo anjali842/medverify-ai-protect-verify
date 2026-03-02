@@ -57,10 +57,10 @@ const Index = () => {
                 MedVerify AI uses Artificial Intelligence to detect counterfeit medicines through packaging analysis and batch verification.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button asChild size="lg" className="bg-card text-primary hover:bg-card/90 font-semibold shadow-lg text-base px-7">
+                <Button asChild size="lg" className="bg-card text-primary hover:bg-primary hover:text-primary-foreground font-semibold shadow-lg text-base px-7 transition-colors duration-300">
                   <Link to="/scan">Scan Medicine</Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-7">
+                <Button asChild size="lg" variant="outline" className="border-card/40 bg-card/10 text-primary-foreground hover:bg-card hover:text-primary font-semibold text-base px-7 transition-colors duration-300">
                   <a href="#features">Learn How It Works</a>
                 </Button>
               </div>
